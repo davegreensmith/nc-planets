@@ -1,38 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  background-color: #E5E5E5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  background-color: #000000;
+  color: #E5E5E5;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-holder {
+  background-color: #E5E5E5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.planet-card {
+  background-color: #FCA311;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.planet-card h3 {
+  font-style: italic;
+  text-decoration: underline;
+  padding: 0.2rem;
+  border: 3px solid #E5E5E5;
+  margin: 0.2rem
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 600px) {
+  .card-holder {
+    display: flex;
+
   }
 }
